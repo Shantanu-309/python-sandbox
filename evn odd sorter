@@ -1,0 +1,20 @@
+num = input("Enter the numbers in list: ").split()
+num = [int(i) for i in num]
+
+def evenoddappender(num):
+    numeven_list = []
+    numodd_list = []
+
+    for i in num:
+        if i % 2 == 0:
+            numeven_list.append(i)
+        else:
+            numodd_list.append(i)
+
+    return numeven_list, numodd_list
+
+
+numeven_list, numodd_list = evenoddappender(num)
+
+print(numeven_list)
+print(numodd_list)
